@@ -122,4 +122,4 @@ The apk can now be deployed to an android device / emulator. Running the app wil
 - [Repackaging to Change App Configuration](https://nicksnettravels.builttoroam.com/repack-android-app/)
 - [APKTOOL](https://ibotpeaches.github.io/Apktool/)
 - [How to Sign an Already Compiled Apk](https://stackoverflow.com/questions/10930331/how-to-sign-an-already-compiled-apk)
-- [Uber Apk Signer](
+- [Uber Apk Signer](https://github.com/patrickfav/uber-apk-signer)
