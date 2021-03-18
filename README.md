@@ -23,7 +23,7 @@ The sample app provided uses the class `IConfigManager` to handle reading config
 
 | iOS                                             | Android                                                |
 | ----------------------------------------------- | ------------------------------------------------------ |
-| ![Sample App on iOS](assets\sampleapp_ios.jpeg) | ![Sample App on Android](assets\sampleapp_android.png) |
+| ![Sample App on iOS](assets/sampleapp_ios.jpeg) | ![Sample App on Android](assets/sampleapp_android.png) |
 
 
 
