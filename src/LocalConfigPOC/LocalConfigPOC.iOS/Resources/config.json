@@ -1,0 +1,6 @@
+﻿{
+  "Secret": "Axemasta",
+  "ApiUrl": "https://staging.yourapp.com/api/",
+  "DeploymentTarget": 2,
+  "Environment": 1
+}

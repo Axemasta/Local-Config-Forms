@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LocalConfigPOC.Views.ConfigPage"
+             Title="{Binding Title}">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,0">
+            <GradientStop Color="#ff9966"
+                          Offset="0.1"/>
+            <GradientStop Color="#ff5e62"
+                          Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ContentPage.Content>
+        <Frame HasShadow="False" CornerRadius="10" Padding="10" HorizontalOptions="Fill" VerticalOptions="Center" Margin="20">
+            <Grid RowDefinitions="44, 1, 44, 1, 44, 1, 44" ColumnDefinitions="Auto, *" Style="{StaticResource GridReset}">
+                <BoxView Style="{DynamicResource SeperatorView}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,-10,0"/>
+                <BoxView Style="{DynamicResource SeperatorView}" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,-10,0"/>
+                <BoxView Style="{DynamicResource SeperatorView}" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,-10,0"/>
+
+                <Label Text="Secret" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="API URL" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Deployment Target" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="Environment" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Grid.Row="6" Grid.Column="0"/>
+
+                <Label Text="{Binding Config.SecretKey}" VerticalTextAlignment="Center" HorizontalTextAlignment="End" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="{Binding Config.ApiUrl}" VerticalTextAlignment="Center" HorizontalTextAlignment="End" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="{Binding Config.DeploymentTarget}" VerticalTextAlignment="Center" HorizontalTextAlignment="End" Grid.Row="4" Grid.Column="1"/>
+                <Label Text="{Binding Config.Environment}" VerticalTextAlignment="Center" HorizontalTextAlignment="End" Grid.Row="6" Grid.Column="1"/>
+            </Grid>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

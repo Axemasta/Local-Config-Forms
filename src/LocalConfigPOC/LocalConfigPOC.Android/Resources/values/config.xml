@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="Secret">Axemasta</string>
+    <string name="ApiUrl">https://staging.yourapp.com/api/</string>
+    <integer name="Environment">1</integer>
+    <integer name="DeploymentTarget">1</integer>
+</resources>
